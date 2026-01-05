@@ -7,14 +7,31 @@ import Achievements from "./sections/Achievements"
 
 function App() {
   return (
-    <div className="bg-gray-950 text-white pt-16">
+    <>
       <Navbar />
-      <Home />
-      <About />
-      <Experience />
-      <Projects />
-      <Achievements />
-    </div>
+
+      <main className="app-content">
+        <section id="home">
+          <Home />
+        </section>
+
+        <section id="about">
+          <About />
+        </section>
+
+        <section id="experience">
+          <Experience />
+        </section>
+
+        <section id="achievements">
+          <Achievements />
+        </section>
+
+        <section id="projects">
+          <Projects />
+        </section>
+      </main>
+    </>
   )
 }
 

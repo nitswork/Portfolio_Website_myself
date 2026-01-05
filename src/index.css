@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+.app-content {
+  padding-top: 80px; /* navbar height */
+}
+
+section {
+  min-height: 100vh;
+  padding: 60px 24px;
+}
+
 html {
   scroll-behavior: smooth;
 }
