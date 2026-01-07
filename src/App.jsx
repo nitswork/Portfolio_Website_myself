@@ -1,9 +1,9 @@
-import Navbar from "./components/Navbar"
-import Home from "./sections/Home"
-import About from "./sections/About"
-import Experience from "./sections/Experience"
-import Projects from "./sections/Projects"
-import Achievements from "./sections/Achievements"
+import Navbar from "./components/Navbar";
+import Home from "./sections/Home";
+import About from "./sections/About";
+import Experience from "./sections/Experience";
+import Projects from "./sections/Projects";
+import Achievements from "./sections/Achievements";
 
 function App() {
   return (
@@ -23,16 +23,16 @@ function App() {
           <Experience />
         </section>
 
-        <section id="achievements">
-          <Achievements />
-        </section>
-
         <section id="projects">
           <Projects />
         </section>
+
+        <section id="achievements">
+          <Achievements />
+        </section>
       </main>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

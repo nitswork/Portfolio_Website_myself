@@ -1,36 +1,47 @@
 .navbar {
   position: fixed;
   top: 0;
-  left: 0;
   width: 100%;
-  background-color: #ffffff;
-  border-bottom: 1px solid #e5e7eb;
+  background: rgba(2, 6, 23, 0.85);
+  backdrop-filter: blur(10px);
   z-index: 1000;
 }
 
 .navbar-container {
-  max-width: 1100px;
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 16px 24px;
+  padding: 18px 32px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  gap: 16px;
 }
 
-.nav-item {
-  font-size: 16px;
-  font-weight: 500;
-  color: #1f2937;
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-family: "Times New Roman", serif;
+}
+
+/* .nav-links li a {
+  color: #ffffff;
+  font-size: 14px;
+  letter-spacing: 1.5px;
   text-decoration: none;
-  transition: color 0.2s ease;
+  transition: color 0.3s ease;
 }
 
-.nav-item:hover {
-  color: #2563eb;
+.nav-links li a:hover {
+  color: #22d3ee;
+} */
+.nav-links a {
+  color: #ffffff;
+  text-decoration: none; /* This removes the underline */
+  margin: 0 6px;
+  letter-spacing: 1.5px;
+  transition: color 0.3s ease;
 }
 
-.nav-separator {
-  color: #9ca3af;
-  font-weight: 400;
+.nav-links span {
+  color: #64748b;
 }

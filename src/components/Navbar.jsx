@@ -1,25 +1,31 @@
-import "./Navbar.css"
+import SocialIcons from "./SocialIcons";
+import "./Navbar.css";
 
 const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="navbar-container">
-        <a href="#home" className="nav-item">Home</a>
-        <span className="nav-separator">|</span>
 
-        <a href="#about" className="nav-item">About</a>
-        <span className="nav-separator">|</span>
+        {/* LEFT NAV */}
+        <ul className="nav-links">
+          <li><a href="#home">HOME</a></li>
+          <span>|</span>
+          <li><a href="#about">ABOUT</a></li>
+          <span>|</span>
+          <li><a href="#experience">EXPERIENCE</a></li>
+          <span>|</span>
+          <li><a href="#projects">PROJECTS</a></li>
+          <span>|</span>
+          <li><a href="#achievements">ACHIEVEMENTS</a></li>
+        </ul>
+        
 
-        <a href="#experience" className="nav-item">Experience</a>
-        <span className="nav-separator">|</span>
+        {/* RIGHT ICONS */}
+        <SocialIcons />
 
-        <a href="#achievements" className="nav-item">Achievements</a>
-        <span className="nav-separator">|</span>
-
-        <a href="#projects" className="nav-item">Projects</a>
       </div>
     </nav>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;
