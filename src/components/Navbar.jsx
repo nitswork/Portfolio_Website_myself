@@ -7,18 +7,21 @@ const Navbar = () => {
       <div className="navbar-container">
 
         {/* LEFT NAV */}
-        <ul className="nav-links">
-          <li><a href="#home">HOME</a></li>
-          <span>|</span>
-          <li><a href="#about">ABOUT</a></li>
-          <span>|</span>
-          <li><a href="#experience">EXPERIENCE</a></li>
-          <span>|</span>
-          <li><a href="#projects">PROJECTS</a></li>
-          <span>|</span>
-          <li><a href="#achievements">ACHIEVEMENTS</a></li>
-        </ul>
-        
+        <div className="nav-links">
+          <a href="#home">HOME</a>
+          <span className="separator">|</span>
+
+          <a href="#about">ABOUT</a>
+          <span className="separator">|</span>
+
+          <a href="#experience">EXPERIENCE</a>
+          <span className="separator">|</span>
+
+          <a href="#projects">PROJECTS</a>
+          <span className="separator">|</span>
+
+          <a href="#achievements">ACHIEVEMENTS</a>
+        </div>
 
         {/* RIGHT ICONS */}
         <SocialIcons />
