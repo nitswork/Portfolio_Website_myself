@@ -1,27 +1,44 @@
-import profileImg from "../assets/profile.jpeg";
+import { useEffect, useState } from "react";
 import "./About.css";
 
+const aboutText = "/ about me";
+
 const About = () => {
+  const [displayText, setDisplayText] = useState("");
+  const [index, setIndex] = useState(0);
+
+  useEffect(() => {
+    if (index < aboutText.length) {
+      const timeout = setTimeout(() => {
+        setDisplayText((prev) => prev + aboutText[index]);
+        setIndex(index + 1);
+      }, 100);
+      return () => clearTimeout(timeout);
+    }
+  }, [index]);
+
   return (
     <section id="about" className="about">
       <div className="about-container">
 
-        {/* LEFT CONTENT */}
         <div className="about-text">
-          <h2 className="about-title">
-            <span className="slash">/</span> about me
+          <h2 className="about-title typewriter">
+            {displayText}
+            <span className="cursor">|</span>
           </h2>
 
           <p>
-            I’m a <span className="highlight">Software Engineering student</span> with
+            I’m a BCA student specializing in
+            <span className="highlight"> AI & Machine Learning</span> with
             a strong interest in building clean, scalable applications and
-            exploring <span className="highlight">AI/ML and full-stack development</span>.
+            exploring the world of
+            <span className="highlight"> software engineering and full-stack development</span>.
           </p>
 
           <p>
-            I enjoy turning ideas into real products using modern technologies,
-            and I’m constantly learning through projects, internships, and
-            hands-on problem solving.
+            I enjoy building real-world applications using ML, computer vision,
+            and full-stack technologies, and I’m constantly learning through
+            projects, internships, and hands-on problem solving.
           </p>
 
           <p className="tech-title">
@@ -32,9 +49,11 @@ const About = () => {
             <ul>
               <li>▸ Java</li>
               <li>▸ Python</li>
-              <li>▸ JavaScript (ES6+)</li>
+              <li>▸ TensorFlow</li>
+              <li>▸ OpenCV</li>
             </ul>
             <ul>
+              <li>▸ JavaScript (ES6+)</li>
               <li>▸ React.js</li>
               <li>▸ Node.js</li>
               <li>▸ MongoDB</li>
@@ -43,9 +62,10 @@ const About = () => {
 
           <p className="about-extra">
             Outside of tech, I enjoy learning new tools, creating content,
-            and constantly improving my problem-solving skills.
+            graphic designing, and constantly improving my problem-solving skills.
           </p>
         </div>
+
       </div>
     </section>
   );

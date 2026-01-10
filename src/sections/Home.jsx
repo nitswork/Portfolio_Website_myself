@@ -85,7 +85,7 @@ const Home = () => {
           </h1>
 
           <p className="home-desc">
-            I'm a software engineer passionate about building clean, high-impact
+            I'm a software engineer student passionate about building clean, high-impact
             applications and exploring AI, full-stack development, and system design.
           </p>
 
