@@ -1,19 +1,20 @@
 .about {
-  padding: 1rem 8%;
   min-height: 100vh;
   background: radial-gradient(circle at top, #020617, #020617);
   display: flex;
-  align-items: center;
+  align-items: flex-start;          /* FIX: stop vertical centering */
+  padding: 90px 10% 80px;           /* FIX: controlled top spacing */
   color: #cfd8ff;
 }
 
 .about-container {
   display: flex;
-  align-items: flex-start;
+  align-items: flex-start;          /* text & image start together */
   justify-content: space-between;
   gap: 4rem;
 }
 
+/* TEXT */
 .about-text {
   max-width: 600px;
 }
@@ -21,16 +22,28 @@
 .about-title {
   font-size: 2rem;
   font-family: "Times New Roman", serif;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
   display: flex;
   align-items: center;
   gap: 1rem;
 }
-
-.slash {
-  color: #7aa2ff;
+.typewriter {
+  font-family: "Times New Roman", serif;
+  font-size: 48px;
+  color: #ffffff;
+  margin-bottom: 20px;
 }
 
+.cursor {
+  color: #22d3ee;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
 .about-text p {
   line-height: 1.8;
   margin-bottom: 1.4rem;
@@ -68,18 +81,23 @@
   opacity: 0.85;
 }
 
-/* IMAGE CARD */
+/* IMAGE CARD — LANDSCAPE */
 .about-image-card {
-  width: 260px;
-  height: 260px;
-  border-radius: 18px;
+  width: 520px;
+  max-width: 100%;
+  border-radius: 22px;
   overflow: hidden;
-  transition: transform 0.3s ease;
+  position: relative;
+  flex-shrink: 0;
+  padding-top: 150px;
+  transition: transform 0.4s ease;
 }
 
 .about-image-card img {
   width: 100%;
-  height: 100%;
+  height: auto;
+  display: block;
+  border-radius: 22px;
   object-fit: cover;
 }
 

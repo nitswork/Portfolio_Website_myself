@@ -1,0 +1,95 @@
+.experience {
+  min-height: 100vh;
+  background: radial-gradient(circle at top, #020617, #020617);
+  padding: 120px 10% 80px;
+  color: #cfd8ff;
+}
+
+.section-title {
+  font-family: "Times New Roman", serif;
+  font-size: 2.2rem;
+  margin-bottom: 3rem;
+}
+
+.typewriter {
+  font-family: "Times New Roman", serif;
+  font-size: 2.2rem;
+  margin-bottom: 3rem;
+}
+
+.cursor {
+  color: #22d3ee;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+.experience-container {
+  display: flex;
+  gap: 4rem;
+}
+
+/* LEFT COMPANY LIST */
+.experience-list {
+  display: flex;
+  flex-direction: column;
+  min-width: 220px;
+  border-left: 2px solid #1e293b;
+}
+
+.company-btn {
+  background: transparent;
+  border: none;
+  color: #94a3b8;
+  padding: 14px 20px;
+  text-align: left;
+  cursor: pointer;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+}
+
+.company-btn:hover {
+  background: rgba(34, 211, 238, 0.05);
+  color: #22d3ee;
+}
+
+.company-btn.active {
+  color: #22d3ee;
+  border-left: 3px solid #22d3ee;
+  background: rgba(34, 211, 238, 0.08);
+}
+
+/* RIGHT DETAILS */
+.experience-details {
+  max-width: 700px;
+}
+
+.experience-details h3 {
+  font-size: 1.4rem;
+  margin-bottom: 0.4rem;
+}
+
+.experience-details h3 span {
+  color: #22d3ee;
+}
+
+.duration {
+  font-size: 0.85rem;
+  color: #94a3b8;
+  margin-bottom: 1.5rem;
+}
+
+.experience-details ul {
+  list-style: none;
+  padding: 0;
+}
+
+.experience-details li {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+  color: #cbd5f5;
+}

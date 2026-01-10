@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import "./About.css";
+import aboutImg from "../assets/portfolio.jpg"
 
 const aboutText = "/ about me";
 
@@ -12,7 +13,7 @@ const About = () => {
       const timeout = setTimeout(() => {
         setDisplayText((prev) => prev + aboutText[index]);
         setIndex(index + 1);
-      }, 100);
+      }, 120);
       return () => clearTimeout(timeout);
     }
   }, [index]);
@@ -20,6 +21,10 @@ const About = () => {
   return (
     <section id="about" className="about">
       <div className="about-container">
+        {/* LEFT IMAGE */}
+        <div className="about-image-card">
+          <img src={aboutImg} alt="Designer & Coder" />
+        </div>
 
         <div className="about-text">
           <h2 className="about-title typewriter">
@@ -62,7 +67,7 @@ const About = () => {
 
           <p className="about-extra">
             Outside of tech, I enjoy learning new tools, creating content,
-            graphic designing, and constantly improving my problem-solving skills.
+            I am also a graphic designer, and constantly improving my problem-solving skills.
           </p>
         </div>
 
