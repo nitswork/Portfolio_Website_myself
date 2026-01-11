@@ -95,7 +95,8 @@ const Experience = () => {
 
           <ul>
             {experiences[activeIndex].points.map((point, i) => (
-              <li key={i}>▸ {point}</li>
+              // <li key={i}>▸ {point}</li>
+              <li key={i}>{point}</li>
             ))}
           </ul>
         </div>

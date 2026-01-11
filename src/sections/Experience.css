@@ -6,12 +6,7 @@
 }
 
 /* TITLE */
-.section-title {
-  font-family: "Times New Roman", serif;
-  font-size: 2.2rem;
-  margin-bottom: 3rem;
-}
-
+.section-title,
 .typewriter {
   font-family: "Times New Roman", serif;
   font-size: 2.2rem;
@@ -33,19 +28,18 @@
 .experience-container {
   display: flex;
   gap: 4rem;
+  align-items: flex-start; /* ALIGN TOP */
 }
 
-/* LEFT COMPANY LIST (NO BIG LINE) */
+/* LEFT COMPANY LIST */
 .experience-list {
   display: flex;
   flex-direction: column;
   min-width: 240px;
-  position: relative;
 }
 
 /* COMPANY BUTTON */
 .company-btn {
-  position: relative;
   background: transparent;
   border: none;
   color: #94a3b8;
@@ -56,35 +50,26 @@
   transition: all 0.3s ease;
 }
 
-/* HOVER */
 .company-btn:hover {
   background: rgba(34, 211, 238, 0.05);
   color: #22d3ee;
-}
-
-/* SMALL ACTIVE LINE ONLY */
-.company-btn.active {
-  color: #22d3ee;
-  background: rgba(34, 211, 238, 0.08);
 }
 
 .company-btn.active {
   color: #22d3ee;
   border-left: 3px solid #22d3ee;
   background: rgba(34, 211, 238, 0.08);
-
-  /* NEW */
   border-radius: 6px;
 }
-
 
 /* RIGHT DETAILS */
 .experience-details {
   max-width: 700px;
   animation: riseUp 0.6s ease forwards;
+
+  margin-top: -25px; /* ALIGN WITH IBM */
 }
 
-/* RISE ANIMATION */
 @keyframes riseUp {
   from {
     opacity: 0;
@@ -97,8 +82,8 @@
 }
 
 .experience-details h3 {
-  font-size: 1.4rem;
-  margin-bottom: 0.4rem;
+  font-size: 1.6rem; /* INCREASED */
+  margin-bottom: 0.6rem;
 }
 
 .experience-details h3 span {
@@ -106,18 +91,30 @@
 }
 
 .duration {
-  font-size: 0.85rem;
+  font-size: 0.9rem; /* INCREASED */
   color: #94a3b8;
   margin-bottom: 1.5rem;
 }
 
+/* BULLET LIST */
 .experience-details ul {
   list-style: none;
   padding: 0;
 }
 
 .experience-details li {
+  position: relative;
+  padding-left: 1.4rem;
   margin-bottom: 1rem;
-  line-height: 1.6;
+  line-height: 1.7;
+  font-size: 1.02rem; /* INCREASED */
   color: #cbd5f5;
+}
+
+.experience-details li::before {
+  content: "▸";
+  position: absolute;
+  left: 0;
+  top: 0.05rem;
+  color: #22d3ee;
 }
