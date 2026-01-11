@@ -4,7 +4,7 @@ import "./Experience.css";
 const experiences = [
   {
     company: "IBM",
-    role: "Tech Intern – Research Project",
+    role: "Project Lead (Tech) – Research Project",
     duration: "Jun 2025 – Jul 2025",
     points: [
       "Built a web-based Research Portal using React.js with secure authentication via Passport.js and OAuth.",
@@ -23,6 +23,16 @@ const experiences = [
     ],
   },
   {
+    company: "Binary Keeda",
+    role: "Graphic Designer Intern",
+    duration: "2025",
+    points: [
+      "Designed social media creatives, posters, and branding assets.",
+      "Worked with Canva and design tools to deliver visually engaging content.",
+      "Collaborated with marketing teams to maintain brand consistency.",
+    ],
+  },
+  {
     company: "Dharmanand Nawani Charitable Trust",
     role: "Social Internship",
     duration: "2024",
@@ -30,16 +40,6 @@ const experiences = [
       "Participated in community-focused initiatives aimed at social development.",
       "Assisted in organizing outreach activities and awareness programs.",
       "Developed teamwork, communication, and leadership skills through fieldwork.",
-    ],
-  },
-  {
-    company: "Binary Keeda",
-    role: "Graphic Designer Intern",
-    duration: "2023",
-    points: [
-      "Designed social media creatives, posters, and branding assets.",
-      "Worked with Canva and design tools to deliver visually engaging content.",
-      "Collaborated with marketing teams to maintain brand consistency.",
     ],
   },
 ];
@@ -69,27 +69,29 @@ const Experience = () => {
       </h2>
 
       <div className="experience-container">
-        {/* LEFT COMPANY LIST */}
+        {/* LEFT */}
         <div className="experience-list">
-          {experiences.map((exp, index) => (
+          {experiences.map((exp, i) => (
             <button
-              key={index}
-              className={`company-btn ${index === activeIndex ? "active" : ""}`}
-              onClick={() => setActiveIndex(index)}
+              key={i}
+              className={`company-btn ${i === activeIndex ? "active" : ""}`}
+              onClick={() => setActiveIndex(i)}
             >
               {exp.company}
             </button>
           ))}
         </div>
 
-        {/* RIGHT DETAILS */}
-        <div className="experience-details">
+        {/* RIGHT — KEY TRIGGERS ANIMATION */}
+        <div className="experience-details" key={activeIndex}>
           <h3>
             {experiences[activeIndex].role}{" "}
             <span>@ {experiences[activeIndex].company}</span>
           </h3>
 
-          <p className="duration">{experiences[activeIndex].duration}</p>
+          <p className="duration">
+            {experiences[activeIndex].duration}
+          </p>
 
           <ul>
             {experiences[activeIndex].points.map((point, i) => (
