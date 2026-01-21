@@ -1,0 +1,10 @@
+/* ===== PROJECTS SECTION ===== */
+.projects {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 20px;
+  background: linear-gradient(180deg, #020617, #020617);
+  color: #e5e7eb;
+}
