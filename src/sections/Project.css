@@ -8,3 +8,13 @@
   background: linear-gradient(180deg, #020617, #020617);
   color: #e5e7eb;
 }
+
+/* ===== PROJECTS TITLE ===== */
+.projects-title {
+  font-family: "Times New Roman", Times, serif;
+  /* font-style: italic; */
+  font-weight: 700;
+  font-size: 3.2rem;
+  color: #f8fafc;
+  margin-bottom: 3rem;
+}

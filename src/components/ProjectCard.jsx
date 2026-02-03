@@ -1,50 +1,41 @@
 const ProjectCard = ({ project }) => {
   return (
-    <div className="relative w-[520px] h-[340px] rounded-3xl overflow-hidden shadow-2xl">
+    <div
+      className="
+        w-[460px]
+        px-10 py-12
+        rounded-2xl
+        text-center
+        bg-gradient-to-b from-[#020617] via-[#020617] to-[#020617]
+        border border-white/10
+        shadow-xl
+      "
+    >
+      {/* TITLE */}
+      <h3
+        className="text-3xl font-bold mb-3 text-white"
+        style={{ fontFamily: "Times New Roman, serif" }}
+      >
+        {project.title}
+      </h3>
 
-      {/* Background Image */}
-      <div
-        className="absolute inset-0 bg-cover bg-center scale-110"
-        style={{ backgroundImage: `url(${project.image})` }}
-      />
+      {/* SUBTITLE */}
+      <p
+        className="text-lg italic text-gray-400 mb-8"
+        style={{ fontFamily: "Times New Roman, serif" }}
+      >
+        {project.subtitle}
+      </p>
 
-      {/* Dark Overlay */}
-      <div className="absolute inset-0 bg-black/70 backdrop-blur-[2px]" />
-
-      {/* Content */}
-      <div className="relative z-10 h-full px-10 flex flex-col items-center justify-center text-center text-white">
-
-        <h3
-          className="text-4xl font-bold mb-1"
-          style={{ fontFamily: "Times New Roman, serif" }}
-        >
-          {project.title}
-        </h3>
-
-        <p
-          className="text-sm uppercase tracking-wide opacity-70 mb-4"
-          style={{ fontFamily: "Times New Roman, serif" }}
-        >
-          {project.subtitle}
-        </p>
-
-        <p className="text-sm max-w-md text-gray-200 leading-relaxed mb-4">
-          {project.description}
-        </p>
-
-        <p className="text-xs text-gray-300 mb-6">
-          {project.tech}
-        </p>
-
-        <a
-          href={project.github}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-sm font-semibold text-cyan-300 hover:text-cyan-200 transition"
-        >
-          View on GitHub →
-        </a>
-      </div>
+      {/* GITHUB LINK */}
+      <a
+        href={project.github}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-lg text-blue-400 hover:text-blue-300 underline underline-offset-8 transition"
+      >
+        View on GitHub →
+      </a>
     </div>
   );
 };
