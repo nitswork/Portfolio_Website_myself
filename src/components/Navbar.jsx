@@ -1,5 +1,5 @@
 import SocialIcons from "./SocialIcons";
-import "./Navbar.css";
+import "./NavBar.css";
 
 const Navbar = () => {
   return (
