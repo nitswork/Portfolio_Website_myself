@@ -12,6 +12,7 @@ const ProjectCard = ({ project }) => {
       "
     >
       {/* TITLE */}
+
       <h3
         className="text-3xl font-bold mb-3 text-white"
         style={{ fontFamily: "Times New Roman, serif" }}
@@ -34,7 +35,7 @@ const ProjectCard = ({ project }) => {
         rel="noopener noreferrer"
         className="text-lg text-blue-400 hover:text-blue-300 underline underline-offset-8 transition"
       >
-        View on GitHub →
+        GitHub
       </a>
     </div>
   );
