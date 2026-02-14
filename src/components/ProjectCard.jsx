@@ -20,6 +20,13 @@ const ProjectCard = ({ project }) => {
         {project.title}
       </h3>
 
+      <img
+        src={project.image}
+        alt={project.title}
+        className="w-full h-56 object-cover rounded-lg mb-6"
+      />
+
+
       {/* SUBTITLE */}
       <p
         className="text-lg italic text-gray-400 mb-8"
