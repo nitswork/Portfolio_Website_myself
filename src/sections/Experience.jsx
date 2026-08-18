@@ -3,6 +3,16 @@ import "./Experience.css";
 
 const experiences = [
   {
+    company: "Deloitte",
+    role: "Management Trainee – under Technology & Transformation (EAID)",
+    duration: "Jun 2026 – Present",
+    points: [
+      "Working under Data Management and Migration, gaining hands-on experience with Microsoft Fabric and Azure Databricks to support data engineering workflows.",
+      "Collaborating with team members while learning enterprise practices, including data transformation and pipeline development.",
+      "Completed the Business Track of Deloitte’s GenW.AI Academy in July 2026, strengthening practical understanding of AI-enabled problem solving and generative AI applications.",
+    ],
+  },
+  {
     company: "IBM",
     role: "Project Lead (Tech) – Research Project",
     duration: "Jun 2025 – Jul 2025",

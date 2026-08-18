@@ -5,7 +5,17 @@ import { Folder } from "lucide-react";
 
 const achievements = [
   {
-    title: "IBM Internship Certificate – Nitya Rajpal",
+    title: "Business Track of GenW.AI",
+    type: "Deloitte India : During Internship",
+    link: "https://drive.google.com/file/d/1uAS1K74T-kw_WlzdzpH2VkzXKVLtz73v/view?usp=sharing",
+  },
+  {
+    title: "Industrial Cybersecurity Essentials",
+    type: "Cisco Networking Academy : Certified course",
+    link: "https://drive.google.com/file/d/1H0ft7g-dcWvq7gLivkymYpyK8REQW7uZ/view?usp=sharing",
+  },
+  {
+    title: "IBM Internship Certificate",
     type: "Technical Internship",
     link: "https://drive.google.com/file/d/12mNaY_s0BwCPRfBbsKAiK7CVR2CpJPB1/view?usp=sharing",
   },
@@ -20,19 +30,19 @@ const achievements = [
     link: "https://drive.google.com/file/d/1GAXqW99oqCsKi8kZrXQ7_CS5Bz_FvsDQ/view?usp=sharing",
   },
   {
-    title: "Binary Keeda – Graphic Design Internship",
+    title: "Binary Keeda",
     type: "Graphic Designing Internship",
     link: "https://drive.google.com/file/d/1Y8SiT09el24isnIPqW9aKUm54TFg52t8/view?usp=sharing",
-  },
-  {
-    title: "50 Days Consistency Badge",
-    type: "LeetCode : Achievement Badge",
-    link: "https://drive.google.com/file/d/1NgrTTL4I_RK84tHYkWhA0PMt8_0p3SIz/view?usp=sharing",
   },
   {
     title: "AI Agents Certificate",
     type: "SimpliLearn , SkillUp : Certified Course",
     link: "https://drive.google.com/file/d/1YLmCJlas-7c9ljzsP_JUcvKTzacd_KRl/view?usp=sharing",
+  },
+  {
+    title: "50 Days Consistency Badge",
+    type: "LeetCode : Achievement Badge",
+    link: "https://drive.google.com/file/d/1NgrTTL4I_RK84tHYkWhA0PMt8_0p3SIz/view?usp=sharing",
   },
   {
     title: "GitHub Course",

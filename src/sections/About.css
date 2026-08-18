@@ -81,6 +81,7 @@
   font-size: 0.95rem;
   line-height: 1.7;
   color: #d1d5db;
+  font-family: "Times New Roman", serif;
   margin-bottom: 18px;
 }
 
@@ -97,6 +98,8 @@
   font-size: 0.95rem;
   font-weight: 600;
   color: #f3f4f6;
+  font-family: "Times New Roman", serif;
+
 }
 
 /* ===== TECH LIST ===== */
@@ -104,18 +107,24 @@
   display: flex;
   gap: 70px;
   margin-bottom: 22px;
+  font-family: "Times New Roman", serif;
+
 }
 
 .tech-list ul {
   list-style: none;
   padding: 0;
   margin: 0;
+  font-family: "Times New Roman", serif;
+
 }
 
 .tech-list li {
   font-size: 0.9rem;
   line-height: 1.9;
   color: #cbd5f5;
+  font-family: "Times New Roman", serif;
+
 }
 
 /* ===== EXTRA TEXT ===== */
@@ -123,6 +132,8 @@
   font-size: 0.9rem;
   color: #9ca3af;
   margin-top: 10px;
+  font-family: "Times New Roman", serif;
+
 }
 
 /* ===== RESPONSIVE ===== */

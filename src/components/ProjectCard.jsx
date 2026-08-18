@@ -40,7 +40,7 @@ const ProjectCard = ({ project }) => {
         href={project.github}
         target="_blank"
         rel="noopener noreferrer"
-        className="text-lg text-blue-400 hover:text-blue-300 underline underline-offset-8 transition"
+        className="text-lg text-blue-400 hover:text-blue-300 no-underline transition"
       >
         GitHub
       </a>

@@ -31,9 +31,19 @@ const About = () => {
             {displayText}
             <span className="cursor">|</span>
           </h2>
+          <p>
+            I’m a <span className="highlight">curious and creative problem-solver</span>
+            {" "}with a strong interest in AI/ML, deep learning, and full-stack
+            development. I enjoy understanding problems, experimenting with
+            ideas, and turning them into something meaningful.
+          </p>
 
           <p>
-            I’m a BCA student specializing in
+            I’m drawn to technical, real-world, data-driven, and creative
+            problems, and I’m always excited to learn something new along the way.
+          </p>
+          {/* <p>
+            I’m a BCA graduate specialized in
             <span className="highlight"> AI & Machine Learning</span> with
             a strong interest in building clean, scalable applications and
             exploring the world of
@@ -44,7 +54,7 @@ const About = () => {
             I enjoy building real-world applications using ML, computer vision,
             and full-stack technologies, and I’m constantly learning through
             projects, internships, and hands-on problem solving.
-          </p>
+          </p> */}
 
           <p className="tech-title">
             Here are some technologies I’ve been working with:

@@ -85,8 +85,9 @@ const Home = () => {
           </h1>
 
           <p className="home-desc">
-            I'm a software engineer student passionate about building clean, high-impact
-            applications and exploring AI, full-stack development, and system design.
+            AI/ML enthusiast and developer based in India. I build across AI, data, and full-stack development, 
+            while exploring data engineering. Outside code, 
+            I’m a graphic designer at heart who loves turning ideas into little projects.
           </p>
 
           <a
